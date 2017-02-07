@@ -1,15 +1,8 @@
-body{
-  /*background: black url("https://i2.wp.com/decozt.com/wp-content/uploads/2014/07/furniture-office-simple-large-office-desk-cheap-computer-desk-contemporary-desk-cheap-desk-wooden-computer-desk-oak-desks-office-computer-desk-red-office-chair-modern-office-chair-office-desk-for-sale-mo.jpg");*/
-  background: black url("https://static.vecteezy.com/system/resources/previews/000/118/977/original/free-city-office-concept-vector-illustration.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  color: white;
-  background-repeat: no-repeat;
-}
 .App {
-  text-align: center;
   margin: 0;
   padding: 0;
+  height: 100vh;
+  overflow: scroll;
 }
 
 .App-header {
@@ -46,7 +39,7 @@ body{
   margin: 80px auto 70px auto;
 }
 
-.contents h3{
+.profiletext h3{
   font-family: 'Bad Script';
   text-align: justify;
 }
@@ -111,4 +104,16 @@ footer{
   border-radius: 0%;
   background: rgba(200, 200, 255, 1);
   box-shadow: 3px 3px 10px rgba(0,0,0, .5);
+}
+
+.sitepic img{
+  width: 100%;
+}
+.site{
+  padding: 20px;
+  margin: 20px 0;
+  background: rgba(0,0,0, .7);
+}
+.sitetext{
+  text-align: left;
 }
