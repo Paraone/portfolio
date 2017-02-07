@@ -1,6 +1,9 @@
 body{
-  background: black url("https://i2.wp.com/decozt.com/wp-content/uploads/2014/07/furniture-office-simple-large-office-desk-cheap-computer-desk-contemporary-desk-cheap-desk-wooden-computer-desk-oak-desks-office-computer-desk-red-office-chair-modern-office-chair-office-desk-for-sale-mo.jpg");
+  /*background: black url("https://i2.wp.com/decozt.com/wp-content/uploads/2014/07/furniture-office-simple-large-office-desk-cheap-computer-desk-contemporary-desk-cheap-desk-wooden-computer-desk-oak-desks-office-computer-desk-red-office-chair-modern-office-chair-office-desk-for-sale-mo.jpg");*/
+  background: black url("https://static.vecteezy.com/system/resources/previews/000/118/977/original/free-city-office-concept-vector-illustration.jpg");
   background-size: cover;
+  background-attachment: fixed;
+  color: white;
   background-repeat: no-repeat;
 }
 .App {
@@ -12,36 +15,54 @@ body{
 .App-header {
   text-align: right;
   background-color: rgba(200, 200, 255, .9);
-
   padding: 10px;
   color: white;
+}
+.App-header li img{
+  width: 30px;
 }
 
 .App-intro {
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App-header ul{
+  margin: 0;
+  padding: 0;
 }
+
 .App-header li{
+  margin: 0;
+  padding: 0;
   color: blue;
   font-size: 20px;
 }
 
 .contents{
+  border-radius: 20px;
   background: rgba(0,0,0, .9);
   color: white;
   padding: 20px;
-  margin: 20px;
+  margin: 80px auto 70px auto;
+}
+
+.contents h3{
+  font-family: 'Bad Script';
+  text-align: justify;
+}
+
+header{
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 footer{
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: rgba(0,0,0, .9);
+  background: rgba(0,0,0, 1);
   color: white;
   height: 50px;
   padding: 10px;
@@ -50,7 +71,18 @@ footer{
   display: inline-block;
 }
 .profiletext{
-  width: 50%;
+  padding: 10px;
+  text-align: left;
+}
+.profiletext h1{
+  text-align: left;
+}
+.profiletext ul li{
+  margin-bottom: 10px;
+}
+.profiletext h3, .profiletext .profiletitle{
+
+  text-align: left;
 }
 .profilepic{
   width: 400px;
@@ -61,4 +93,22 @@ footer{
 .profilepic img{
   transform: translateY(-50px);
   width: 100%;
+}
+.profiletitle{
+  font-size: 1.5em;
+  border-top: 1px solid white;
+}
+
+.left{
+  text-align: left;
+}
+
+.btn{
+  transition: all .5s;
+}
+
+.btn:hover{
+  border-radius: 0%;
+  background: rgba(200, 200, 255, 1);
+  box-shadow: 3px 3px 10px rgba(0,0,0, .5);
 }
